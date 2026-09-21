@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hőmérsékletmikes</title>
+  </head>
+  <body>
+    <h1>Hőmérséklet adatok</h1>
+
+    <form id="addForm" class="temp-form">
+      <label>
+        Dátum
+        <input id="dayInput" type="date" readonly />
+      </label>
+
+      <label>
+        Hőmérséklet
+        <input id="tempInput" type="number" step="0.1" required />
+      </label>
+
+      <button type="submit">Hozzáadás</button>
+    </form>
+
+    <table id="data"></table>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
